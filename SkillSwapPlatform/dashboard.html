@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <?php
+session_start(); // Start the session
+
+// Check if user data is available
+if (!isset($_SESSION['user_data'])) {
+    header("Location: login.html"); // Redirect if not logged in
+    exit();
+}
+
+$user = $_SESSION['user_data']; // Retrieve user data from the session
+?>
+
+    <div class="container">
+        <h2>User Dashboard</h2>
+        <h3>
+            <?php echo htmlspecialchars($user['full_name']); ?>
+        </h3>
+        <p><strong>Date of Birth:</strong>
+            <?php echo htmlspecialchars($user['dob']); ?>
+        </p>
+        <p><strong>Gender:</strong>
+            <?php echo htmlspecialchars($user['gender']); ?>
+        </p>
+        <p><strong>Email:</strong>
+            <?php echo htmlspecialchars($user['email']); ?>
+        </p>
+        <p><strong>Phone:</strong>
+            <?php echo htmlspecialchars($user['phone']); ?>
+        </p>
+        <p><strong>Location:</strong>
+            <?php echo htmlspecialchars($user['location']); ?>
+        </p>
+        <p><strong>Skills Offered:</strong>
+            <?php echo htmlspecialchars($user['skills_offered']); ?>
+        </p>
+        <p><strong>Skills Wanted:</strong>
+            <?php echo htmlspecialchars($user['skills_wanted']); ?>
+        </p>
+        <p><strong>Bio:</strong>
+            <?php echo nl2br(htmlspecialchars($user['bio'])); ?>
+        </p>
+        <p><strong>LinkedIn:</strong> <a href="<?php echo htmlspecialchars($user['linkedin']); ?>">
+                <?php echo htmlspecialchars($user['linkedin']); ?>
+            </a></p>
+        <p><strong>Other Links:</strong> <a href="<?php echo htmlspecialchars($user['other_links']); ?>">
+                <?php echo htmlspecialchars($user['other_links']); ?>
+            </a></p>
+        <p><strong>Interests:</strong>
+            <?php echo htmlspecialchars($user['interests']); ?>
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
