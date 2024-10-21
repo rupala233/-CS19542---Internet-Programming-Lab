@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>User Information</h2>
+        <form action="user_info.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" name="dob">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" class="form-control" id="location" name="location">
+            </div>
+            <div class="form-group">
+                <label for="skillsOffered">Skills Offered</label>
+                <input type="text" class="form-control" id="skillsOffered" name="skillsOffered"
+                    placeholder="e.g., Java, Graphic Design">
+            </div>
+            <div class="form-group">
+                <label for="skillsWanted">Skills Wanted</label>
+                <input type="text" class="form-control" id="skillsWanted" name="skillsWanted"
+                    placeholder="e.g., Python, SEO">
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Short Bio</label>
+                <textarea class="form-control" id="bio" name="bio" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="linkedin">LinkedIn Profile</label>
+                <input type="url" class="form-control" id="linkedin" name="linkedin">
+            </div>
+            <div class="form-group">
+                <label for="otherLinks">Other Relevant Links</label>
+                <input type="url" class="form-control" id="otherLinks" name="otherLinks">
+            </div>
+            <div class="form-group">
+                <label for="interests">Interests/Hobbies</label>
+                <textarea class="form-control" id="interests" name="interests" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

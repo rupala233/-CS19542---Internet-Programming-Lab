@@ -1,0 +1,299 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    /* Light background color */
+    color: #343a40;
+    /* Darker text for better contrast */
+    line-height: 1.6;
+}
+
+/* Container settings */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #007bff;
+    /* Bootstrap blue */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 1.8rem;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    background-color: #e9ecef;
+    /* Light gray */
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #0056b3;
+}
+
+/* Features section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.features .feature-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.features .feature-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.features .feature-box p {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+/* Footer section */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .features .feature-box {
+        margin-bottom: 20px;
+        flex-basis: 100%;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Custom carousel image dimensions */
+.carousel-item img {
+    width: 100%;
+    /* Adjust width to fill the carousel */
+    height: 500px;
+    /* Set a specific height, you can adjust this as needed */
+    object-fit: cover;
+    /* Ensures images maintain aspect ratio and fill the space */
+}
+
+.card {
+    border: none;
+    /* Remove default border */
+    border-radius: 10px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Prevent content overflow */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    transition: transform 0.2s;
+    /* Smooth scaling effect */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Scale up on hover */
+}
+
+.card-img-top {
+    width: 100%;
+    /* Ensure image is responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.card-body {
+    padding: 20px;
+    /* Add padding */
+    background-color: #f8f9fa;
+    /* Light background color */
+}
+
+.card-text {
+    font-size: 16px;
+    /* Font size for card text */
+    color: #333;
+    /* Text color */
+    line-height: 1.5;
+    /* Improved readability */
+}
+
+/* Optional: Add a hover effect on the card text */
+.card-text:hover {
+    color: #007bff;
+    /* Change text color on hover */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container,
+.signup-container {
+    display: flex;
+    height: 100vh;
+}
+
+.image-section {
+    flex: 1;
+    background-color: #EAE4DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+
+.form-section {
+    flex: 1;
+    background-color: #E1D7C6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.form-section h2 {
+    margin-bottom: 30px;
+    color: #295F98;
+}
+
+.form-section .form-label {
+    color: #295F98;
+}
+
+.form-control {
+    background-color: #CDC2A5;
+    border: none;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #295F98;
+    border: none;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #244a7c;
+}
+
+.navbar-brand {
+    font-family: 'Papyrus', cursive;
+    /* Custom font family */
+    font-size: 28px;
+    /* Adjust the font size */
+    color: #0056b3;
+    /* Blue shade for the text */
+    font-weight: bold;
+    /* Bold text */
+    text-transform: uppercase;
+    /* Uppercase letters */
+    letter-spacing: 2px;
+    /* Add some spacing between letters */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    /* Add a subtle shadow */
+}
+
+.navbar-brand:hover {
+    color: #1e90ff;
+    /* Change color when hovered */
+    text-decoration: none;
+    /* Remove underline on hover */
+}

@@ -1,0 +1,106 @@
+/* General Page Layout */
+body {
+    background-color: #f0f8ff;
+    /* Light blue background */
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    margin-top: 20px;
+    max-width: 900px;
+}
+
+h2,
+h3 {
+    color: #040456;
+    /* Bootstrap primary blue */
+    font-weight: bold;
+    font-family: 'cursive';
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Profile Section */
+.profile-header {
+    background-color: #007bff;
+    /* Blue background */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-header h3 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.profile-header p {
+    font-size: 1.2rem;
+}
+
+/* Info Cards */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card h5 {
+    color: #007bff;
+    /* Blue for card titles */
+    font-weight: bold;
+}
+
+.card-body p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Skills Section */
+.skills-card {
+    background-color: #e7f1ff;
+    /* Light blue for skills cards */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.skills-card h5 {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.skills-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Button Styles */
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    color: #666;
+    font-size: 0.9rem;
+}
