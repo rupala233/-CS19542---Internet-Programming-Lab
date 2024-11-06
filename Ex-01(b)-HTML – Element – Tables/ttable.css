@@ -1,0 +1,36 @@
+table{
+border-collapse: collapse;
+border: 2px solid black;
+text-align: center;
+font-weight: bold;
+table-layout: fixed;
+width:100%;
+}
+
+th,td{
+border: 2px solid black;
+padding: 8px 10px;
+.room{
+color:red;
+}
+}
+
+.vertical-text{
+
+writing-mode: vertical-rl;
+text-align: center;
+}
+
+.single-line {
+            white-space: nowrap;
+display: flex;
+            justify-content: space-between;
+        }
+
+p{
+text-align: center;
+}
+.space{
+word-spacing: 150px;
+}
+
