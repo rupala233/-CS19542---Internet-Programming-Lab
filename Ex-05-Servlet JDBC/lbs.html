@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <script>
+        function validateForm() {
+            var title = document.forms["bookForm"]["title"].value;
+            var author = document.forms["bookForm"]["author"].value;
+            var publisher = document.forms["bookForm"]["publisher"].value;
+            var edition = document.forms["bookForm"]["edition"].value;
+            var price = document.forms["bookForm"]["price"].value;
+            
+            if (title == "" || author == "" || publisher == "" || edition == "" || price == "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+            if (isNaN(price) || price <= 0) {
+                alert("Price must be a positive number");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>Library Management System</h1>
+    <form name="bookForm" action="BookServlet" method="POST" onsubmit="validateForm();">
+        <label>Book Title: </label><input type="text" name="title"><br>
+        <label>Author: </label><input type="text" name="author"><br>
+        <label>Publisher: </label><input type="text" name="publisher"><br>
+        <label>Edition: </label><input type="text" name="edition"><br>
+        <label>Price: </label><input type="text" name="price"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
