@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Example</title>
+    <script>
+        function loadXMLDoc() {
+           
+            var xhttp = new XMLHttpRequest();
+
+            // Define what happens on successful data submission
+            xhttp.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                    // Display the result in the div section
+                    document.getElementById("result").innerHTML = this.responseText;
+                }
+            };
+
+            
+            xhttp.open("GET", "rec.txt", true);
+
+            
+            xhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <h2>Retrieve Data using AJAX</h2>
+    <div id="result" style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;"></div>
+    <button onclick="loadXMLDoc()">Load Data</button>
+</body>
+</html>
