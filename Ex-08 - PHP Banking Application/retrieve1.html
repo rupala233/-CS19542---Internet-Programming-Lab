@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve Customer and Account Details</title>
+</head>
+<body>
+    <h2>RETRIEVE CUSTOMER DETAILS</h2>
+    <form action="retrieve1.php" method="GET">
+        Customer ID:
+        <input type="text" name="cid">
+        <input type="submit">
+    </form>
+
+    <div id="transaction-section" style="margin-top: 20px;">
+        <h3>Transaction</h3>
+        <form action="transaction.php" method="POST">
+            Account Number:
+            <input type="text" name="ano" required><br>
+            Transaction Type:
+            <select name="ttype" required>
+                <option value="D">Deposit</option>
+                <option value="W">Withdrawal</option>
+            </select><br>
+            Amount:
+            <input type="number" name="tamount" required><br>
+            <input type="submit" value="Submit Transaction">
+        </form>
+    </div>
+</body>
+</html>
