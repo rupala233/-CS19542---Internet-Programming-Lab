@@ -21,8 +21,24 @@
 <body>
 
     <div class="head">
-        <img class="logo" src="logo2.png" alt="logo">
-        <img class="un" src="UN-logo.png" ALT="un logo">
+
+        <nav class="navbar navbar-expand-lg navbar-white">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img class="logo" src="logo2.png" alt="logo">
+                    <img class="un" src="UN-logo.png" ALT="un logo">
+                </a>
+                <div class="ml-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Admissions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Fee Link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">AQAR</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
     </div>
     <HR>
 
@@ -37,9 +53,28 @@
                     <li class="nav-item">
                         <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                        <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="aboutDropdown">
+                            <a class="dropdown-item" href="about.html">Correspondent's message</a>
+                            <a class="dropdown-item" href="#">Principal</a>
+                            <a class="dropdown-item" href="#">About the college</a>
+                            <a class="dropdown-item" href="#">Accreditations</a>
+                            <a class="dropdown-item" href="#">Certifications</a>
+                            <a class="dropdown-item" href="#">Governing Body</a>
+                            <a class="dropdown-item" href="#">Academic Council</a>
+                            <a class="dropdown-item" href="#">MOUs</a>
+                            <a class="dropdown-item" href="#">Eminent Faculty Members</a>
+                            <a class="dropdown-item" href="#">Mandatory Disclosures</a>
+                            <a class="dropdown-item" href="#">Policies</a>
+                            <a class="dropdown-item" href="#">Committees</a>
+                            <a class="dropdown-item" href="#">Organogram</a>
+                            <a class="dropdown-item" href="#">Current Faculty List</a>
+                        </div>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#">DEPARTMENT</a>
                     </li>
@@ -56,7 +91,7 @@
                         <a class="nav-link" href="#">FACILITIES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">STUDENT</a>
+                        <a class="nav-link" href="#">STUDENT LIFE</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">PLACEMENTS</a>
@@ -89,116 +124,152 @@
             </div>
         </div>
     </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img3.jpg" alt="First slide">
+                <div class="custom-caption">
+                    <h4>Admissions</h4>
+                    <h1>Engineer Your Future</h1>
+                    <p>Learn more about the admissions process, financial aid, and other resources available to
+                        prospective students</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img2.jpg" alt="Second slide">
+                <div class="custom-caption">
+                    <h4>Life at REC
+                    </h4>
+                    <h1> Nurturing Holistic Individuals</h1>
+                    <p> In addition to academics, our students get a holistic exposure to extra curricular activities
+                        such as sports, music, dance & cultural festivals.
+
+                        PreviousNext</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img1.jpg" alt="Third slide">
+                <div class="custom-caption">
+                    <h4>Campus Placements</h4>
+                    <h1>1640+ Placement Offers</h1>
+                    <p> The Batch of 2023 has received 1640+ offers (as on 10.07.2023) from some of the leading
+                        companies.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
     <style>
-        * {
+        .custom-caption {
+            background-color: rgba(128, 0, 128, 0.7);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 20px;
+            border-radius: 8px 0 0 0;
+            color: white;
+            /* max-width: 300px; */
+            width: 500px;
+        }
+
+        .custom-caption h4,
+        .custom-caption p {
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
         }
-
-        body {
-            font-family: Arial, sans-serif;
+    </style>
+    <style>
+        .announcements-section {
+            height: 100%;
+            background-color: #f8f9fa;
             color: #333;
-        }
-
-
-        .container {
+            overflow: hidden;
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            position: relative;
             padding: 20px;
         }
 
 
-        .profile-sidebar {
-            width: 25%;
-            padding: 20px;
-            background-color: #f2f2f2;
-            border-right: 2px solid #ccc;
-        }
-
-        .profile-sidebar h2 {
+        .announcements-header {
+            font-weight: bold;
             font-size: 1.5em;
             margin-bottom: 10px;
             color: purple;
         }
 
-        .profile-sidebar ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .profile-sidebar ul li {
-            margin: 8px 0;
-        }
-
-        .profile-sidebar ul li a {
-            text-decoration: none;
-            color: #555;
-            font-weight: bold;
-        }
-
-        .profile-sidebar ul li a:hover {
-            color: purple;
-            text-decoration: underline;
+        .scrolling-container {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
         }
 
 
-        .main-content {
-            flex: 1;
-            padding: 20px;
-            padding-left: 40px;
+        .announcement {
+            font-size: 1em;
+            padding: 10px 0;
+            text-align: center;
         }
 
-        .main-content h3 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-            color: purple;
+
+        @keyframes scroll-vertical {
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                transform: translateY(-100%);
+            }
         }
 
-        .main-content p {
-            line-height: 1.6;
-            margin-bottom: 15px;
+
+        .scrolling-text {
+            display: flex;
+            flex-direction: column;
+            animation: scroll-vertical 15s linear infinite;
         }
     </style>
+    <div style="height:20px;"></div>
+    <div class="container-fluid d-flex">
+
+        <div class="video-section col-9">
+            <iframe class="w-100 h-100" src="https://www.youtube.com/embed/ek6h-WNRR1Y" title="YouTube video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
 
 
-    <div class="container">
-
-        <aside class="profile-sidebar">
-            <h2>Profile</h2>
-            <ul>
-                <li><a href="#correspondent-message">Correspondent's Message</a></li>
-                <li><a href="#principal">Principal</a></li>
-                <li><a href="#about-college">About the College</a></li>
-                <li><a href="#accreditations">Accreditations</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#governing-body">Governing Body</a></li>
-                <li><a href="#academic-council">Academic Council</a></li>
-                <li><a href="#mou">MOUs</a></li>
-                <li><a href="#faculty">Eminent Faculty Members</a></li>
-                <li><a href="#disclosures">Mandatory Disclosures</a></li>
-                <li><a href="#visitor-remark">Visitor’s Remark</a></li>
-                <li><a href="#policies">Policies</a></li>
-                <li><a href="#committees">Committees</a></li>
-            </ul>
-        </aside>
 
 
-        <main class="main-content">
-            <img src="correspondent.jpg" alt="correspondent">
-            <h3 id="correspondent-message">Correspondent's Message</h3>
-            <p>In a country where education is held in very high esteem and the teacher is equated to God, we at
-                Rajalakshmi Engineering College have dedicated ourselves to impart education and develop the student to
-                be a responsible engineer and individual.</p>
-            <p>Students of Rajalakshmi Engineering College are groomed carefully, and the virtues of hard work,
-                discipline, and ethical practices in the profession are imbibed in them constantly during their campus
-                life.</p>
-            <p>Campus life here stresses the importance of extra academic activities apart from academic learning,
-                leading them to many new avenues. All these go a long way in making our students thoroughbred
-                professionals, eminently suited to contribute to their chosen careers with an ever-open mind for new
-                thoughts and ideas in industrial and technological advancements.</p>
-            <p>We are hence confident that our students equipped with such capabilities will emerge as valuable
-                contributory assets to the development of the organizations they serve, as well as to the nation.</p>
-        </main>
+
+        <div class="announcements-section col-3">
+            <div class="announcements-header">Announcements</div>
+            <div class="scrolling-container">
+                <div class="scrolling-text">
+                    <div class="announcement">New session starts on Monday</div>
+                    <div class="announcement">Holiday on Friday</div>
+                    <div class="announcement">Upcoming event: Coding Hackathon</div>
+                    <div class="announcement">Don't forget to register for workshops</div>
+                    <div class="announcement">Examination schedule released</div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="text-center text-lg-start text-white" style="background-color: purple;">
