@@ -1,0 +1,28 @@
+<!-- contact.component.html -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="name">Name:</label>
+                <input type="text" id="name" class="form-control" [(ngModel)]="contactInfo.name" name="name" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="form-control" [(ngModel)]="contactInfo.email" name="email"
+                    required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="age">Age:</label>
+                <input type="number" id="age" class="form-control" [(ngModel)]="contactInfo.age" name="age" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="city">City:</label>
+                <input type="text" id="city" class="form-control" [(ngModel)]="contactInfo.city" name="city" required>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary w-50">Submit</button>
+        </div>
+    </form>
+</div>

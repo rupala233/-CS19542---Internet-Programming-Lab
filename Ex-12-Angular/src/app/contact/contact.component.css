@@ -1,0 +1,22 @@
+/* contact.component.css */
+.container {
+    max-width: 600px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007bff;
+    text-align: center;
+}
+
+button {
+    width: 50%;
+    /* Button width is 50% of the container */
+}
+
+.form-group label {
+    font-weight: bold;
+}

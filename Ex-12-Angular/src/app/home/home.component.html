@@ -1,0 +1,13 @@
+<!-- home.component.html -->
+<div class="container mt-5">
+    <h2 class="text-center">Home Page</h2>
+    <div *ngIf="contactInfo.name">
+        <p><strong>Name:</strong> {{ contactInfo.name }}</p>
+        <p><strong>Email:</strong> {{ contactInfo.email }}</p>
+        <p><strong>Age:</strong> {{ contactInfo.age }}</p>
+        <p><strong>City:</strong> {{ contactInfo.city }}</p>
+    </div>
+    <div *ngIf="!contactInfo.name">
+        <p>No contact information available.</p>
+    </div>
+</div>
